@@ -1,0 +1,952 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+   font-family: 'Didact Gothic', sans-serif;
+    color: black;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;   
+}
+
+/* Nav */
+
+.trenches-top{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 5% 5% 0; 
+    font-size: 1.25em;
+    color: black;
+
+}
+
+.x{
+    display: none; 
+    margin: .5em 2% .5em;
+}
+
+
+.ham{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: .5em 2% .5em;
+}
+
+.nav {
+	display: none;
+}
+
+.nav ul{
+    text-align: center;  
+    padding: 30% 0 0;
+  font-size: 1.5em;
+}
+
+.nav ul li{
+   text-decoration: none;
+    text-transform: uppercase;
+        margin: 1em auto 0;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover{
+    text-decoration: line-through; 
+}
+
+
+
+/* This selected targets the `.nav` only when the checkbox is checked */
+.nav-check:checked ~ .nav{
+	display: block;
+    height: 100vh;
+    background-color: rgba(255,255,255,.95);
+     
+}
+
+.nav-check:checked ~ .nav-label .ham{
+	display: none;
+}
+
+.nav-check:checked ~ .nav-label .x{
+	display: block;
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-check {
+	/* Put the checkbox off the top of the screen */
+	position: absolute;
+	top: -3em;
+}
+
+
+.desktop-nav{
+    display: none; 
+}
+
+.desktop-nav ul li.middle {
+ display:none;
+}
+
+
+
+
+.panel{
+    float: right;   
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: none;
+}
+
+.top-nav{
+    float: right;      
+}
+
+.panel ul{
+    list-style-type: none;
+    margin: 50% auto 0;
+    text-align: center;
+   
+    padding: 0;
+}
+
+
+
+.panel ul li:hover{
+    text-decoration: line-through;  
+}
+
+.panel ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;   
+}
+
+
+.banner{
+
+    height: 75px;
+    width:100%;
+    background-color:white;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    border-bottom: 3px solid #ffcd00 ;
+    
+}
+
+
+
+.header{
+    font-weight: 300;
+    font-size: 3em;
+    
+}
+
+.container{
+    margin: 1em 10% 1em;    
+}
+
+
+
+.top-logo{
+    float: left;
+    width: 200px;
+    position: absolute;
+    left: 2%;
+    top: 5px;
+
+}
+
+.small-trenches-logo{
+    width: 120%;
+    height: 120%;
+    margin: 0;
+}
+
+
+
+
+/* Cover page */ 
+
+.cover-page{
+    height: 100vh;   
+    width: 100%;
+
+}
+
+.syd-logo{
+    margin: 100px auto 0;
+    width: 100%;
+    height: 175px;
+}
+
+.logo{
+    margin: 0 auto 0;
+}
+
+.billboard {
+    background-image: url(../images/heartburn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+
+}
+
+.billboard:hover{
+         
+}
+
+.billboard h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+
+.word-container{
+    margin: 0 10% 0;
+    height: 100vh;
+    
+}
+
+.word-box{
+    height: auto;
+    bottom: 5px;
+    
+}
+
+
+
+.arrow{
+   height: 35px;
+}
+
+.down{
+
+
+}
+
+.placeholder-push{
+    height: 75px;
+    width: 100%;
+    color: white;
+}
+
+yellow{
+    color: #ffcd00;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.services-button{
+    text-align: center;
+    width: 100%;
+    margin: 1.5em 0 0 ;
+
+}
+
+
+.services-button a,
+.services-button a:link,
+.services-button a:visited{
+    color:white;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: .5em 5% .5em;
+
+}
+    
+.services-button a:hover{
+    background-color:  #ffcd00;
+    border: 1px solid white;
+    color: black;
+}
+
+
+/* ABOUT page */
+
+.about-page{
+    height: 100%;  
+    width: 100%;
+}
+
+.me{
+    border: 1px solid grey;
+    width: 300px;
+    height: 300px;
+    margin: 1em auto 0;
+    background-image:url(../images/syd-logo.svg);
+    background-size: cover;
+    background-position: 10px 10px 10px 10px;
+    display: block;
+}
+
+
+
+
+
+/* Services page */
+
+
+.services-page{
+     
+    height: 100vh;
+}
+
+.service{
+   margin: 1em 5% 1em;
+    width: 75px;
+    height: 95px;
+   
+    padding: 1em 5% 1em;
+}
+
+.service:hover{
+  
+}
+
+.services-icon{
+    height: 50px;
+    margin: 0 5% 0;
+  
+
+}
+
+.cap{
+    text-align: center;
+    font-size: 5em;  
+}
+
+
+
+
+
+
+/* clients page */
+
+.jump-space-wrap{
+    position: relative;
+}
+
+.jump-spacer{
+    
+    position: absolute;
+    top: -75px;
+}
+
+.clients-page{
+    margin: 0;  
+    height: 100vh;
+    width: 100%;
+
+    
+}
+
+.client{
+    width: auto;
+    margin: 1em auto 0;
+    display: inline-block;
+   
+    
+}
+
+.client:hover{
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);   
+    
+}
+
+.client-logo{
+    height: 75px;
+    margin: 0 auto 0;
+   
+   
+}
+
+.client-10{
+    display: none;   
+}
+
+
+/* works */
+
+.work {
+    
+    width: 100%;
+    height: 225px;
+    position: relative;
+    display: inline-block;
+
+    
+}
+
+.work:hover{
+    border: 2px solid yellow;
+    
+    
+}
+
+.scene-1-1{
+    height: 150px;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    background-image: url(../images/1-14.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-1-2{
+    height: 75px;
+    width: 30%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top:0;
+    right: 0;
+     background-image: url(../images/1-22.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-1-3{
+    height: 75px;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+     background-image: url(../images/1-24.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.scene-1-4{
+    height: 150px;
+    width: 30%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     background-image: url(../images/1-23.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+  
+
+
+.scene-2-1{
+    height: 112.5px;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+     background-image: url(../images/1-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-2-2{
+    height: 56.25px;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top:0;
+    right: 0;
+     background-image: url(../images/1-5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-2-3{
+    height: 56.25px;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    right:0;
+    top:56.25px;
+     background-image: url(../images/1-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.scene-2-4{
+    height: 112.5px;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     background-image: url(../images/1-6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.scene-3-1{
+    height: 225px;
+    width: 20%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+     background-image: url(../images/1-29.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-3-2{
+    height: 112.5px;
+    width: 40%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top:0;
+    left: 20%;
+     background-image: url(../images/1-26.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-3-3{
+    height: 112.5px;
+    width: 40%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+     background-image: url(../images/1-28.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.scene-3-4{
+    height: 112.5px;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    left:20%;
+     background-image: url(../images/1-27.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+
+
+  .scene-4-1{
+    height: 112.5px;
+    width: 60%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+       background-image: url(../images/1-8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-4-2{
+    height: 112.5px;
+    width: 40%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    top:0;
+    right: 0;
+     background-image: url(../images/1-7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scene-4-3{
+    height: 112.5px;
+    width: 40%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+     background-image: url(../images/1-9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.scene-4-4{
+    height: 112.5px;
+    width: 60%;
+    padding: 1em;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     background-image: url(../images/1-11.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+
+
+/* contact */
+.contact-page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.map{
+    height: 200px;   
+    width: 100%;
+    
+}
+
+
+hr{
+    border: solid 2px #ffcd00;
+}
+
+fieldset{
+    font-size: 2rem;
+    margin: 0 auto 0;
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    border-style: none;
+    padding: 0;
+}
+
+label{
+    display:block;
+    font-size: 1.5rem;
+}
+
+.message {
+ height: 275px;   
+}
+
+input, 
+textarea,
+select{
+ font-size: 1.5rem;
+    height: 75px;
+}
+
+input,
+select{
+ width: 100%   
+}
+
+.radio {
+    border-style: none;
+    padding: 0;
+}
+
+.radiospan {
+    white-space: nowrap;
+}
+
+.radiospan label,
+.radiospan input{
+    display:inline-block;
+}
+
+.radiospan input{
+    margin-right:0;
+    padding-right: 0;
+    width: 5%;
+}
+
+.radiospan label{
+    margin-left:0;
+    padding-left: 0;
+}
+
+form div{
+    padding-bottom: 1rem;   
+}
+
+.send-message{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    display: block;
+    border: 3px solid #a00;
+    padding:1rem 0 1rem;
+    width: 100%;
+    font-size:1.5rem;
+    text-transform: capitalize;
+    color:black;
+    background-color: white;
+    overflow: hidden;
+    cursor:pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.send-message{
+    color:black;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: .5em 5% .5em;
+   
+    
+    
+}
+
+button:hover{
+    background-color: #ffcd00;
+    border: 1px solid black;
+    color: black;
+
+}
+.formpad{
+    margin:0 auto 0;   
+}     
+
+
+.social{
+    list-style-type: none;
+    display: inline-block;
+ 
+
+    
+}
+
+.social-icon{
+    width: 50px;   
+    height: 50px;
+  
+   
+    
+}
+
+.social-container{
+    padding-left: 0;
+}
+
+
+/* footer */
+.footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+/* media queeries */
+
+@media only screen and (min-width: 30em){
+    .word-container{
+           margin: 0 20% 0;    
+    }
+
+}
+
+@media only screen and (min-width: 40em) {
+    
+    .word-container{
+           margin: 0 20% 0;    
+    }
+    
+    .mobile-logo{
+        display: none;
+    }
+    
+    .top-nav{
+        display:none;   
+    }
+    
+    .desktop-nav{
+        text-transform: uppercase;
+        font-size: .75;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        border-bottom: 3px solid #ffcd00;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        background-color:white;
+ 
+    
+}
+
+.desktop-nav ul{ 
+        padding: 0 2% 0;
+        list-style-type: none;
+        float: right;
+        text-align: center;
+        overflow: hidden;
+        font-family: Helvetica, arial, sans-serif;
+    
+}
+
+.desktop-nav ul li:first-child{
+    margin:0;   
+}
+
+.desktop-nav ul li{
+    width: 3;
+    padding: 30px 0 0;
+    margin: 0;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.desktop-nav ul li a {
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s linear;
+    text-decoration: none;
+    display: block;
+    font-size: .75em;
+}
+    
+    .desktop-nav ul li a:hover {
+        text-decoration: line-through;
+    }        
+
+.desktop-nav ul li.middle{
+    padding: 45px 0 0;
+    display: block;
+}
+    
+    .banner {
+        display: none;   
+    }
+    
+        
+     .form-pad{    
+        margin: 0 0;   
+         float: left;
+    }
+    
+    .billboard{
+        height: 100vh;   
+        
+    }
+    
+    .syd-photo-container{
+    margin: 0 auto 0; 
+    padding: 0 5% 0;
+}
+
+.about-container{
+    padding: 0 5% 0;   
+    
+}
+    
+    .clients-page{
+        height: 100%;     
+    }
+    
+    
+    .services-page{
+        height: 100%;     
+    }
+
+
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 50em) {
+    
+      .word-container{
+           margin: 0 25% 0;    
+    }
+    
+      .services-buckets{
+    margin: .5em 15% .5em;
+    
+}
+    
+    
+    
+
+    
+}
+
+@media only screen and (min-width: 60em) {
+    
+      .word-container{
+           margin: 0 25% 0;    
+    }
+    
+
+      
+
+        
+    }
+
+    
+@media only screen and (min-width: 70em) {
+ 
+        
+    }
+    
+}
+
