@@ -76,6 +76,7 @@ body{
 
 
 
+
 /* This selected targets the `.nav` only when the checkbox is checked */
 .nav-check:checked ~ .nav{
 	display: block;
@@ -193,7 +194,7 @@ body{
 /* Cover page */ 
 
 .cover-page{
-    height: 100vh;   
+    height: 100%;   
     width: 100%;
 
 }
@@ -234,12 +235,15 @@ body{
 .word-container{
     margin: 0 10% 0;
     height: 100vh;
+    position:relative;
     
 }
 
 .word-box{
     height: auto;
-    bottom: 5px;
+    bottom: 100px;
+    width: 100%;
+    position: absolute;
     
 }
 
@@ -247,9 +251,14 @@ body{
 
 .arrow{
    height: 35px;
+    bottom: 0;
 }
 
 .down{
+    text-align:center;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
 
 
 }
@@ -312,7 +321,14 @@ yellow{
     display: block;
 }
 
+.about-work{
 
+  width: 100%;
+    height: 225px;
+    position: relative;
+    display: inline-block;
+
+}
 
 
 
@@ -320,9 +336,9 @@ yellow{
 
 
 .services-page{
-     
-    height: 100vh;
+    height: 100%;
 }
+
 
 .service{
    margin: 1em 5% 1em;
@@ -348,6 +364,11 @@ yellow{
     font-size: 5em;  
 }
 
+.services-container p{
+    padding-bottom: 0;   
+    
+}
+
 
 
 
@@ -369,9 +390,8 @@ yellow{
     margin: 0;  
     height: 100vh;
     width: 100%;
-
-    
 }
+
 
 .client{
     width: auto;
@@ -399,6 +419,11 @@ yellow{
 
 
 /* works */
+
+.work-page{
+    height: 100%;   
+    
+}
 
 .work {
     
@@ -638,6 +663,29 @@ yellow{
     background-repeat: no-repeat;
     background-size: cover;
 } 
+
+.popular-container{
+    border: 1px solid red;
+    height: auto;
+    width:100%; 
+    margin: 1em auto 1em;
+}
+
+.popular{
+    
+    border: 1px solid blue;
+    height: 150px;
+    width:100%;
+    display: inline-block;
+    margin: 0 auto 0;
+    overflow: hidden;
+    margin: 0 auto 1em;
+
+    
+    
+}
+
+
 
 
 
@@ -892,18 +940,19 @@ button:hover{
     padding: 0 5% 0;
 }
 
-.about-container{
-    padding: 0 5% 0;   
-    
+  
+    .nav li a:active {
+    color:red;   
 }
     
-    .clients-page{
-        height: 100%;     
+    .popular{
+        width:33%;   
+        
     }
     
-    
-    .services-page{
-        height: 100%;     
+    .services-container{
+        margin: 0 auto 3em;   
+        
     }
 
 
@@ -924,6 +973,11 @@ button:hover{
     
 }
     
+    .services-container{
+        margin: 0 auto 4em;   
+        
+    }
+    
     
     
 
@@ -933,7 +987,7 @@ button:hover{
 @media only screen and (min-width: 60em) {
     
       .word-container{
-           margin: 0 25% 0;    
+           margin: 0 30% 0;    
     }
     
 
@@ -945,8 +999,11 @@ button:hover{
     
 @media only screen and (min-width: 70em) {
  
-        
+     .word-container{
+           margin: 0 40% 0;    
     }
+        
+    
     
 }
 
