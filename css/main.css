@@ -25,7 +25,9 @@ body{
     padding:0;   
 }
 
-/* Nav */
+/*======================================*/
+/*===========Navigation=================*/
+/*======================================*/
 
 .trenches-top{
     text-transform: uppercase;
@@ -72,6 +74,10 @@ body{
 
 .nav ul li a:hover{
     text-decoration: line-through; 
+}
+
+.nav ul li:active a{
+    color:yellow;   
 }
 
 
@@ -191,7 +197,9 @@ body{
 
 
 
-/* Cover page */ 
+/*======================================*/
+/*===========Cover-Page=================*/
+/*======================================*/
 
 .cover-page{
     height: 100%;   
@@ -332,7 +340,9 @@ yellow{
 
 
 
-/* Services page */
+/*======================================*/
+/*===========Services Page=================*/
+/*======================================*/
 
 
 .services-page{
@@ -374,7 +384,9 @@ yellow{
 
 
 
-/* clients page */
+/*======================================*/
+/*===========Clients Page=================*/
+/*======================================*/
 
 .jump-space-wrap{
     position: relative;
@@ -388,7 +400,7 @@ yellow{
 
 .clients-page{
     margin: 0;  
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -417,8 +429,83 @@ yellow{
     display: none;   
 }
 
+.clients-container{
+    margin: 0em auto 4em;   
+    
+    
+}
 
-/* works */
+
+/*======================================*/
+/*===========lightbox=================*/
+/*======================================*/
+
+.lightbox{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    opacity: 0;
+    background-color: white;
+    
+}
+
+.lightbox:target {
+    opacity: 1;
+    z-index: 50;
+}
+
+.lb-close {
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0 auto .5px;
+	text-decoration: none;
+	background-color: #a00;
+	color: #fff;
+	padding: 0.5em;
+}
+
+.lightbox > h1{
+     margin: 1em 0 0;
+    
+}
+
+.photo-box{
+    height: 200px;
+    width: 340px;
+    border:1px solid red;
+    
+}
+
+.shoot-info{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.shoot-info ul{
+    padding-left: 0;   
+    
+}
+
+.shoot-info ul li{
+    text-decoration: none;
+    list-style-type: none;
+
+    
+}
+
+.shoot-info ul li:first-child{
+    color:red;
+}
+
+
+
+/*======================================*/
+/*===========Work Page=================*/
+/*======================================*/
 
 .work-page{
     height: 100%;   
@@ -437,9 +524,10 @@ yellow{
 
 .work:hover{
     border: 2px solid yellow;
-    
-    
+
 }
+
+
 
 .scene-1-1{
     height: 150px;
@@ -689,7 +777,10 @@ yellow{
 
 
 
-/* contact */
+/*======================================*/
+/*===========Contact Page=================*/
+/*======================================*/
+
 .contact-page{
     width: 100%;
     height: 100%;
@@ -825,10 +916,23 @@ button:hover{
 
 .social-container{
     padding-left: 0;
+    margin: 1em auto 0;
+}
+
+.copyright{
+    font-size: .75em;
+}
+
+.cright{
+    margin: 2em auto 0;   
+    
 }
 
 
-/* footer */
+
+/*======================================*/
+/*===========Footer=================*/
+/*======================================*/
 .footer{
     background-color: black;
     color: white;
@@ -841,7 +945,9 @@ button:hover{
 
 
 
-/* media queeries */
+/*======================================*/
+/*===========Media Queeries=================*/
+/*======================================*/
 
 @media only screen and (min-width: 30em){
     .word-container{
@@ -877,9 +983,9 @@ button:hover{
         background-color:white;
  
     
-}
-
-.desktop-nav ul{ 
+    }
+    
+    .desktop-nav ul{ 
         padding: 0 2% 0;
         list-style-type: none;
         float: right;
@@ -887,21 +993,26 @@ button:hover{
         overflow: hidden;
         font-family: Helvetica, arial, sans-serif;
     
-}
+    }
+    
+    .desktop-nav ul li:active a{
+        color:yellow;   
+        
+    }
 
-.desktop-nav ul li:first-child{
+    .desktop-nav ul li:first-child{
     margin:0;   
-}
+    }
 
-.desktop-nav ul li{
+    .desktop-nav ul li{
     width: 3;
     padding: 30px 0 0;
     margin: 0;
     font-weight: 100;
     display: inline-block;
-}
+    }
 
-.desktop-nav ul li a {
+    .desktop-nav ul li a {
     color: black;
     cursor: pointer;
     outline: none;
@@ -909,23 +1020,22 @@ button:hover{
     text-decoration: none;
     display: block;
     font-size: .75em;
-}
+    }
     
     .desktop-nav ul li a:hover {
         text-decoration: line-through;
     }        
-
-.desktop-nav ul li.middle{
+    .desktop-nav ul li.middle{
     padding: 45px 0 0;
     display: block;
-}
+    }
     
     .banner {
         display: none;   
     }
     
         
-     .form-pad{    
+    .form-pad{    
         margin: 0 0;   
          float: left;
     }
@@ -938,12 +1048,12 @@ button:hover{
     .syd-photo-container{
     margin: 0 auto 0; 
     padding: 0 5% 0;
-}
+    }
 
   
     .nav li a:active {
     color:red;   
-}
+    }
     
     .popular{
         width:33%;   
@@ -954,6 +1064,13 @@ button:hover{
         margin: 0 auto 3em;   
         
     }
+    
+    .clients-page{
+        height: 100%;   
+        
+    }
+    
+ 
 
 
     
