@@ -379,6 +379,11 @@ yellow{
     
 }
 
+.services-info h1{
+    margin: 1em 0 1em;   
+    
+}
+
 
 
 
@@ -435,6 +440,10 @@ yellow{
     
 }
 
+.clients-info h1{
+    margin: 1em 0 1em;
+}   
+
 
 /*======================================*/
 /*===========lightbox=================*/
@@ -442,19 +451,27 @@ yellow{
 
 .lightbox{
     position: absolute;
-    bottom:0;
+    top:0;
     left:0;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
     opacity: 0;
     background-color: white;
-    
 }
 
 .lightbox:target {
     opacity: 1;
     z-index: 50;
+}
+
+.lightbox > .container{
+     overflow: hidden;
+    border:1px solid blue;
+    
+    
 }
 
 .lb-close {
@@ -463,7 +480,7 @@ yellow{
     left:0;
     margin: 0 auto .5px;
 	text-decoration: none;
-	background-color: #a00;
+	background-color:#ffcd00;
 	color: #fff;
 	padding: 0.5em;
 }
@@ -474,9 +491,14 @@ yellow{
 }
 
 .photo-box{
-    height: 200px;
-    width: 340px;
+    height: 300px;
+    width: 400px;
     border:1px solid red;
+    background-image: url(../images/1-10.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
     
 }
 
@@ -499,6 +521,8 @@ yellow{
 
 .shoot-info ul li:first-child{
     color:red;
+
+    
 }
 
 
@@ -894,8 +918,15 @@ button:hover{
 
 }
 .formpad{
-    margin:0 auto 0;   
+    margin:0 auto 0; 
+    
 }     
+
+.form{
+    padding: 1em;    
+    border: 1px solid grey;
+    
+}
 
 
 .social{
@@ -925,6 +956,13 @@ button:hover{
 
 .cright{
     margin: 2em auto 0;   
+    
+}
+
+.contact-info ul{
+    list-style-type: none;
+    padding-left: 0;
+       
     
 }
 
@@ -1061,7 +1099,7 @@ button:hover{
     }
     
     .services-container{
-        margin: 0 auto 3em;   
+         
         
     }
     
@@ -1091,7 +1129,7 @@ button:hover{
 }
     
     .services-container{
-        margin: 0 auto 4em;   
+    
         
     }
     
