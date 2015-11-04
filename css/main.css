@@ -29,13 +29,13 @@ body{
 .opacity {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
- 	-webkit-transition: opacity 1s linear;
+ 	-webkit-transition: opacity .5s linear;
 	}	
 	
 .opacity:hover {
 	opacity: 1;
 	filter: alpha(opacity=100);
- 	-webkit-transition: opacity 1s linear;
+ 	-webkit-transition: opacity .5s linear;
 	}
 
 
@@ -381,7 +381,7 @@ yellow{
     width: 100px;
     height: auto;
     display:inline-block;
-    border: 1px solid red;
+
     margin: 1em 5% 0 1em;
 }
 
@@ -391,7 +391,8 @@ yellow{
 }
 
 .services-container{
-    text-align: center;   
+    text-align: center;
+
 }
 
 .services-info h1{
@@ -403,7 +404,7 @@ yellow{
 }
 
 .service > figcaption{
-    color:blue;
+    font-size: .75em;
     
 }
 
@@ -476,8 +477,6 @@ yellow{
     width: 100%;
     height: 100vh;
     max-height: 100vh;
-    overflow-y:auto;
-    overflow-x: hidden;
     opacity: 0;
     background-color: white;
 }
@@ -485,8 +484,10 @@ yellow{
 .lightbox:target {
     opacity: 1;
     z-index: 50;
-  
+    overflow: auto;
 }
+
+
 
 .lightbox > .container{
      overflow: hidden;
@@ -511,10 +512,6 @@ yellow{
 	padding: 0.5em;
 }
 
-.lightbox > h1{
-     margin: 1em 0 0;
-    
-}
 
 .photo-box{
     height: 300px;
@@ -528,13 +525,29 @@ yellow{
     
 }
 
+
+    
+    
+}
+
 .shoot-info{
     list-style-type: none;
-    padding-left: 0;
+    padding: 0 10% 1em;
+}
+
+.shoot-info h1{
+    font-size: 1.5em;
+    margin: 0 auto 0;
+    
+}
+
+.shoot-info h2{
+    font-size: .75em;   
 }
 
 .shoot-info ul{
-    padding-left: 0;   
+    padding-left: 0; 
+    font-size: .75em;
     
 }
 
@@ -548,6 +561,23 @@ yellow{
 .shoot-info ul li:first-child{
     color:red;
 
+    
+}
+
+
+.dtl-logo{
+    width: 250px;
+    height: auto;
+    padding: 1em;
+    
+}
+
+.bucket{
+    border:1px solid green;
+    width: 19%;
+    height: 50px;
+    display: inline-block;
+    margin: 1em auto 1em;
     
 }
 
@@ -905,8 +935,8 @@ input{
 }
 
 .form{
-    padding: 1em;    
-    border: 1px solid red;    
+    padding:0 auto 1em;    
+   
 }
 
 
@@ -1092,10 +1122,9 @@ input{
         
     }
     
-.lb-content1{
-    width: 60%   
+
     
-}
+ 
     
  
 
@@ -1117,11 +1146,12 @@ input{
     
 }
     
-    .services-container{
+.lb-content1{
+    width: 60%   
     
-        
-    }
+}
     
+
     
     
 
