@@ -232,7 +232,7 @@ body{
 
 }
 
-.syd-logo{
+.trenches-logo{
     margin: 100px auto 0;
     width: 100%;
     height: 175px;
@@ -250,8 +250,49 @@ body{
     width: 100%;
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    animation: bg-change 18s linear infinite;
 
 }
+
+
+@keyframes bg-change {
+    0% {
+     background-image: url(../images/heartburn.jpg);
+    }
+     19% {
+     background-image: url(../images/heartburn.jpg);
+    }
+    
+    
+    20%{ background-image: url(../images/1-10.jpg);
+    }
+    39%{ background-image: url(../images/1-10.jpg);
+    }
+    
+    
+    40%{ background-image: url(../images/1-9.jpg);
+    }
+    59%{ background-image: url(../images/1-9.jpg);
+    }
+    
+    
+    60%{ background-image: url(../images/1-14.jpg);
+    }
+    79%{ background-image: url(../images/1-14.jpg);
+    }
+    
+    
+    80%{ background-image: url(../images/1-12.jpg);
+    }
+      99%{ background-image: url(../images/1-12.jpg);
+    }
+    
+    
+    100%{
+        background-image: url(../images/heartburn.jpg);
+    }
+}
+
 
 .billboard:hover{
          
@@ -365,6 +406,11 @@ yellow{
 
 }
 
+.about-info{
+    margin: 0 10% 0 0;   
+    
+}
+
 
 
 /*======================================*/
@@ -414,7 +460,7 @@ yellow{
 
 
 /*======================================*/
-/*===========Clients Page=================*/
+/*=========== Page=================*/
 /*======================================*/
 
 .jump-space-wrap{
@@ -485,13 +531,15 @@ yellow{
     opacity: 1;
     z-index: 50;
     overflow: auto;
+    top:75px;
 }
 
 
 
 .lightbox > .container{
      overflow: hidden;
-    border:1px solid blue;
+
+    margin: 75px 10% 1em;
     
     
 }
@@ -516,8 +564,8 @@ yellow{
 .photo-box{
     height: 300px;
     width: 100%;
-    border:1px solid red;
-    background-image: url(../images/1-10.jpg);
+    
+    background-image: url(../images/1-20.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -527,12 +575,16 @@ yellow{
 
 
     
-    
-}
+    .shoot{
+        padding: 0 0 5% 0;   
+        padding-bottom: 0;
+        margin-bottom: 0;
+        
+    }
 
 .shoot-info{
     list-style-type: none;
-    padding: 0 10% 1em;
+    padding: 0 10% 0;
 }
 
 .shoot-info h1{
@@ -572,15 +624,27 @@ yellow{
     
 }
 
+.buckets{
+
+    
+}
 .bucket{
-    border:1px solid green;
-    width: 19%;
+    border:1px solid gray;
+    background-image: url(../images/1-14.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 89px;
     height: 50px;
     display: inline-block;
-    margin: 1em auto 1em;
+    margin: .5em auto 1em;
+
     
 }
 
+.links{
+    margin: 60px auto 0;   
+    
+}
 
 
 /*======================================*/
@@ -598,8 +662,11 @@ yellow{
     height: 225px;
     position: relative;
     display: inline-block;
-     
+}
 
+.work-page h2{
+    margin:0;
+    font-size: 1em;
     
 }
 
@@ -864,21 +931,21 @@ yellow{
 } 
 
 .popular-container{
-    border: 1px solid red;
     height: auto;
     width:100%; 
     margin: 1em auto 1em;
 }
 
 .popular{
-    
-    border: 1px solid blue;
-    height: 150px;
+    background-color:#eee;
+    border: 1px solid white;
+    height: 200px;
     width:100%;
+    min-width: 100%;
     display: inline-block;
     margin: 0 auto 0;
     overflow: hidden;
-    margin: 0 auto 1em;
+    margin:  0;
 
     
     
@@ -902,41 +969,6 @@ yellow{
     height: 200px;   
     width: 100%;
     
-}
-
-
-hr{
-    border: solid 2px #ffcd00;
-}
-
-fieldset{
-    font-size: 2rem;
-    margin: 0 auto 0;
-    width: 100%;
-    text-decoration: none;
-    list-style-type: none;
-    border-style: none;
-    padding: 0;
-}
-
-label{
-    display:block;
-    font-size: 1.5rem;
-    
-}
-
-input{
-    display: block;   
-    width: 100%;
-    height: auto;
-    min-height: 75px;
-    font-size: 1em;
-    overflow-x: hidden;
-}
-
-.form{
-    padding:0 auto 1em;    
-   
 }
 
 
@@ -976,6 +1008,46 @@ input{
 
 
 
+hr{
+    border: solid 2px #ffcd00;
+}
+
+/*======================================*/
+/*===========FORM=================*/
+/*======================================*/
+
+ 
+.form{
+    padding:0 auto 1em;    
+   
+}
+
+label{
+    display:block;
+    font-size: 1.5rem;
+    
+}
+
+input{
+    display: block;   
+    width: 100%;
+    height: auto;
+    min-height: 75px;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+.send-button value{
+    width: 100%;  
+    color:red;
+    
+}
+
+
+
+
+
+
 /*======================================*/
 /*===========Footer=================*/
 /*======================================*/
@@ -1007,7 +1079,7 @@ input{
 }
 
 @media only screen and (min-width: 40em) {
-    
+        
     .word-container{
            margin: 0 20% 0;    
     }
@@ -1020,8 +1092,6 @@ input{
         display:none;   
     }
     
-   
-    
     .desktop-nav{
         text-transform: uppercase;
         font-size: .75;
@@ -1033,9 +1103,25 @@ input{
         z-index: 1;
         width: 100%;
         background-color:white;
- 
-    
+        color:black;
+        height: 75px;
     }
+    
+    
+    
+    .desktop-nav.past-main {
+        background-color:black;
+        color:white;
+}
+
+    #main {
+   
+}
+
+    #below-main {
+    
+}
+    
     
     .desktop-nav ul{ 
         padding: 0 2% 0;
@@ -1147,8 +1233,9 @@ input{
 }
     
 .lb-content1{
-    width: 60%   
-    
+    width: 60%;
+    height: 100%;
+    margin: 0;
 }
     
 
