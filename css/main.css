@@ -78,6 +78,7 @@ body{
 
 .nav {
 	display: none;
+   
 }
 
 .nav ul{
@@ -151,6 +152,7 @@ body{
     background-color: white;
     width: 100%;
     display: none;
+    z-index: 80;
 }
 
 .top-nav{
@@ -161,7 +163,6 @@ body{
     list-style-type: none;
     margin: 50% auto 0;
     text-align: center;
-   
     padding: 0;
 }
 
@@ -184,7 +185,7 @@ body{
     width:100%;
     background-color:white;
     position: fixed;
-    z-index: 1;
+    z-index: 70;
     display: inline-block;
     border-bottom: 3px solid #ffcd00 ;
     
@@ -324,17 +325,23 @@ body{
 
 
 .arrow{
-   height: 35px;
+   height: 25px;
     bottom: 0;
 }
+
+
 
 .down{
     text-align:center;
     position: relative;
     z-index: 2;
     bottom: 50px;
+}
 
 
+.down:hover > .arrow{
+    transform:    
+    
 }
 
 .placeholder-push{
@@ -372,7 +379,7 @@ yellow{
 
 }
     
-.cta-button:hover a{
+.cta-button a:hover{
     background-color:  #ffcd00;
     border: 1px solid white;
     color: black;
@@ -454,6 +461,11 @@ yellow{
     
 }
 
+.services-info{
+    margin: 0 0 5% 0;   
+    
+}
+
 
 
 
@@ -463,7 +475,7 @@ yellow{
 /*=========== Page=================*/
 /*======================================*/
 
-.jump-space-wrap{
+.jump-spacer-wrap{
     position: relative;
 }
 
@@ -511,27 +523,31 @@ yellow{
     margin: 1em 0 1em;
 }   
 
+.clients-info{
+    margin: 0 10% 0 0;   
+    
+}
 
 /*======================================*/
 /*===========lightbox=================*/
 /*======================================*/
 
 .lightbox{
-    position: absolute;
-    top:0;
+    position: fixed;
+    top:75px;
     left:0;
+    z-index: 50;
+    overflow: auto;
     width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    opacity: 0;
+    height: calc(100vh - 75px);
+    display:none;
     background-color: white;
 }
 
 .lightbox:target {
-    opacity: 1;
-    z-index: 50;
-    overflow: auto;
-    top:75px;
+    display:block;
+ 
+    
 }
 
 
@@ -573,18 +589,10 @@ yellow{
     
 }
 
-
-    
-    .shoot{
-        padding: 0 0 5% 0;   
-        padding-bottom: 0;
-        margin-bottom: 0;
-        
-    }
-
 .shoot-info{
     list-style-type: none;
-    padding: 0 10% 0;
+    padding: 0 44% 0 0;
+    width: 125%;
 }
 
 .shoot-info h1{
@@ -642,10 +650,25 @@ yellow{
 }
 
 .links{
-    margin: 60px auto 0;   
+    margin: 1em auto 1em;  
+    text-align: center;
+}
+
+.links img{
+    margin: 0 auto 0;
+       
     
 }
 
+.social-buttons{
+       
+    margin: 0 auto 0;
+}
+
+.social-buttons h2{
+    text-align: center;
+    
+}
 
 /*======================================*/
 /*===========Work Page=================*/
@@ -981,8 +1004,6 @@ yellow{
     width: 50px;   
     height: 50px;
   
-   
-    
 }
 
 .social-container{
@@ -1208,7 +1229,15 @@ input{
         
     }
     
-
+    .shoot-info{
+    list-style-type: none;
+    padding: 0 0 0 10%;
+}
+    
+.links{
+    margin: 45px 0 0 5%;   
+    
+}
     
  
     
