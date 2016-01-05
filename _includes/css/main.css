@@ -462,6 +462,7 @@ yellow{
 }
 
 
+
 .services-icon{
     height: 50px;
 }
@@ -580,7 +581,7 @@ yellow{
 .lightbox > .container{
      overflow: hidden;
 
-    margin: 75px 10% 1em;
+    margin: 25px 10% 1em;
     
     
 }
@@ -594,12 +595,42 @@ yellow{
     position: absolute;
     top:0;
     left:0;
-    margin: 0 auto .5px;
 	text-decoration: none;
 	background-color:#ffcd00;
-	color: #fff;
-	padding: 0.5em;
+	color:black;
+	padding: 1em;
 }
+
+.lb-nav{
+    list-style-type: none;
+    position: fixed;
+    right:0px;
+    margin:0;
+    
+
+    
+}
+
+.lb-nav li{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    
+    z-index: 101;
+    
+}
+
+
+.lb-nav li a{
+    padding:1em 0 1em;
+    display: block;
+	text-decoration: none;
+	color:white;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 
 .photo-box{
@@ -614,13 +645,24 @@ yellow{
     
 }
 
-.shoot-info h1{
-    margin: 0 0 .25em ;  
-    font-size: 1em;
+.lb-title-box{
+    background-color: black;  
+    height: 100px;
+    
 }
 
-.shoot-info h2{
-    margin: 0 0 .5em;   
+.lb-title{
+    margin: 0 5% 0;
+    padding:.5em 7% .5em;
+    font-size: 1.5em;
+    text-align: center;
+    color:white;
+    margin-left:40px;
+}
+
+.band-name{
+    font-size: 1.5em;
+    margin: 1em 0 .5em;   
     
 }
 
@@ -638,10 +680,7 @@ yellow{
     
 }
 
-.buckets{
 
-    
-}
 .bucket{
     border:1px solid gray;
     background-image: url(../images/1-14.jpg);
@@ -700,13 +739,12 @@ yellow{
 }
 
 .work-title{
-    opacity: 0;
     position: absolute;
-    bottom:0;
-    left:0;
     z-index: 50;
-    padding: 1em 10% 1em;
+    padding: 1em 5% .5em;
     margin: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, .0);
    
     
 }
@@ -714,21 +752,35 @@ yellow{
 .work-title h2{
     font-size: 1.5em;
     line-height: 1.5em;
-   color: white;
-    margin-bottom: 0;
-    
-}
-
-.work-title h3{
-    font-size: .75em;
-    color: #ffcd00
+    color: white;
     
 }
 
 .work:hover .work-title{
     opacity: 1;
-    
+    background-color: rgba(0, 0, 0, .9);
+}
 
+.more-btn{
+    width:100%;
+    height: auto;
+    background-color: black;
+    color:white;
+    margin: 0 auto 1em;
+}
+
+.more-btn h1{
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+.more-btn:hover{
+    background-color: #ffcd00;
+    color:black;
+    cursor:pointer;
+    border:1px solid black;
+    
 }
 
 
@@ -1251,11 +1303,22 @@ textarea{
     
 
     
-.links{
+    .links{
     margin: 45px 0 0 5%;   
     
-}
+        }
     
+    .more-btn{
+        float:right;
+        width:50%;
+        
+    }
+    
+    .lb-title-box{
+    background-color: black;  
+    height: 100px;
+    
+}
  
     
  
