@@ -274,48 +274,10 @@ body{
     width: 100%;
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
-    animation: bg-change 18s linear infinite;
+    
 
 }
 
-
-@keyframes bg-change {
-    0% {
-     background-image: url(../images/heartburn.jpg);
-    }
-     19% {
-     background-image: url(../images/heartburn.jpg);
-    }
-    
-    
-    20%{ background-image: url(../images/1-10.jpg);
-    }
-    39%{ background-image: url(../images/1-10.jpg);
-    }
-    
-    
-    40%{ background-image: url(../images/1-9.jpg);
-    }
-    59%{ background-image: url(../images/1-9.jpg);
-    }
-    
-    
-    60%{ background-image: url(../images/1-14.jpg);
-    }
-    79%{ background-image: url(../images/1-14.jpg);
-    }
-    
-    
-    80%{ background-image: url(../images/1-12.jpg);
-    }
-      99%{ background-image: url(../images/1-12.jpg);
-    }
-    
-    
-    100%{
-        background-image: url(../images/heartburn.jpg);
-    }
-}
 
 
 .billboard:hover{
@@ -438,6 +400,14 @@ yellow{
 
 .about-info{
     margin: 0 10% 0 0;   
+    
+}
+
+
+.team ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-decoration: none;
     
 }
 
@@ -733,15 +703,15 @@ yellow{
 }
 
 .work-page h2{
-    margin:0;
-    font-size: 1em;
-    
+    margin: 1em auto 0;   
+    font-size: 1.5em;
 }
+
 
 .work-title{
     position: absolute;
     z-index: 50;
-    padding: 1em 5% .5em;
+    padding: .5em 5% .5em;
     margin: 0;
     bottom:0;
     background-color: rgba(0, 0, 0, .0);
@@ -750,8 +720,8 @@ yellow{
 }
 
 .work-title h2{
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 1em;
     color: white;
     
 }
