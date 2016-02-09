@@ -1,5 +1,5 @@
 markdown: redcarpet
 permalink: pretty
-baseurl: ""
+baseurl: "/trenches-demo"
 exclude: ['README.md']
 exclude: ['portfolio-piece-template.md']
